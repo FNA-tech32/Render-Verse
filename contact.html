@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Render Verse</title>
+  <meta name="description" content="Get in touch with Render Verse about a website, bot, or automation project.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">Render Verse<span class="dot">.</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu container">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Tell us what you're trying to solve.</h1>
+        <p>A couple of sentences is enough to start: what you need, and roughly what kind of business or project it's for. We reply within 24 hours, and if Render Verse isn't the right fit for the job, we'll say so.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <form id="contact-form" action="https://formspree.io/f/xgawlprk" method="POST">
+            <input type="hidden" name="_subject" value="New message from Render Verse site">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="project-type">What do you need?</label>
+              <select id="project-type" name="project-type">
+                <option>Website</option>
+                <option>Bot</option>
+                <option>Automation (n8n)</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What are you trying to solve?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-note">
+              This form sends straight to our inbox via Formspree — no data is stored anywhere else.
+            </p>
+          </form>
+        </div>
+        <div>
+          <span class="kicker">Direct &amp; Alternative Channels</span>
+          <h2>Prefer direct contact?</h2>
+          <p>We read every message personally — choose whichever channel works best for you. No ticket queues or gatekeepers.</p>
+
+          <div class="contact-methods">
+            <div class="contact-method-card">
+              <div class="contact-method-header">
+                <span class="contact-method-label">Primary Email</span>
+              </div>
+              <a href="mailto:hello@renderverse.dev" class="contact-method-val">hello@renderverse.dev</a>
+              <p class="contact-method-sub">Quotes, project scopes &amp; initial inquiries</p>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="contact-method-header">
+                <span class="contact-method-label">Alternative Email</span>
+              </div>
+              <a href="mailto:contact@renderverse.dev" class="contact-method-val">contact@renderverse.dev</a>
+              <p class="contact-method-sub">Direct support &amp; backup communications</p>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="contact-method-header">
+                <span class="contact-method-label">Telegram Direct</span>
+                <span class="tag tag-demo" style="font-size:0.7rem; padding: 2px 6px;">Fastest</span>
+              </div>
+              <a href="https://t.me/RenderVerse" target="_blank" rel="noopener" class="contact-method-val">@RenderVerse</a>
+              <p class="contact-method-sub">Instant messaging for quick consultations &amp; bot demos</p>
+            </div>
+
+            <div class="contact-method-card">
+              <div class="contact-method-header">
+                <span class="contact-method-label">Alternative / Phone &amp; WhatsApp</span>
+              </div>
+              <a href="tel:+15557363378" class="contact-method-val">+1 (555) 736-3378</a>
+              <p class="contact-method-sub">Mon – Fri, 9:00 AM – 6:00 PM CET</p>
+            </div>
+          </div>
+
+          <div class="direct-guarantee">
+            <p style="margin:0;"><strong>Direct Guarantee:</strong> You talk directly with the engineer building your product. Guaranteed reply within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <div class="brand" style="margin-bottom: 8px;">Render Verse<span class="dot">.</span></div>
+        <p style="margin:0;">Websites, bots &amp; automation.<br>Remote-first digital studio.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin:0 0 8px;"><a href="services.html">Services</a></p>
+        <p style="margin:0 0 8px;"><a href="portfolio.html">Portfolio</a></p>
+        <p style="margin:0 0 8px;"><a href="about.html">About</a></p>
+        <p style="margin:0;"><a href="contact.html">Contact</a></p>
+      </nav>
+      <div>
+        <p style="margin:0;"><a href="mailto:hello@renderverse.dev">hello@renderverse.dev</a></p>
+        <p style="margin:4px 0 0; font-size: 0.85rem;"><a href="mailto:contact@renderverse.dev">Alt: contact@renderverse.dev</a></p>
+        <p style="margin:8px 0 0;">© <span data-year></span> Render Verse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat widget (demo — interface only, not wired to a live bot yet) -->
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" type="button" aria-expanded="false" aria-controls="chatPanel" aria-label="Open chat">
+      <svg class="icon-chat" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Render Verse chat" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <span class="chat-avatar">R</span>
+          <div>
+            <p class="chat-title">Render Verse Bot</p>
+            <span class="tag tag-demo">Demo</span>
+          </div>
+        </div>
+        <button class="chat-close" id="chatClose" type="button" aria-label="Close chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages" aria-live="polite">
+        <div class="chat-msg chat-msg-bot">Hi 👋 This is a preview of a chatbot Render Verse could build for your site.</div>
+        <div class="chat-msg chat-msg-bot">Try typing something — replies here are pre-written for now, but a real version would connect to your bookings, FAQs, or CRM.</div>
+      </div>
+
+      <form class="chat-input-row" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Type a message…" autocomplete="off" aria-label="Message">
+        <button type="submit" class="chat-send" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+      <p class="chat-note">Demo interface — not connected to a live bot yet.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
